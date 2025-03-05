@@ -1,0 +1,39 @@
+{
+ "cryptomatMaker": "centurion",
+ "cryptomatModel": "cryptoatm-nonrc",
+  "brain": {
+    "dataPath": "data"
+  },
+  "kioskPrinter": {
+    "model": "genmega",
+    "address": "/dev/ttyS4"
+  },
+  "compliance": {
+    "paperWallet": false
+  },
+  "frontFacingCamera": {
+    "device":"/dev/video0"
+  },
+  "scanner": {
+    "device": "/dev/ttyS7"
+  },
+  "billValidator": {
+    "deviceType": "genmega",
+    "rs232": {
+      "device": "/dev/ttyS2"
+    }
+  },
+  "billDispenser": {
+    "model": "genmega",
+    "device": "/dev/ttyS3",
+    "license": "",
+    "cassettes": 2
+  },
+  "updater": {
+    "caFile": "/opt/certs/lamassu.pem",
+    "extractor": {
+      "lamassuPubKeyFile": "/opt/certs/lamassu.pub.key"
+    },
+    "packageJsonDir": "/opt/lamassu-machine"
+  }
+}
